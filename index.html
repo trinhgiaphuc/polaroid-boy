@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>polaroid boy</title>
+    <title>letstakeapic</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-    <link rel="stylesheet" href="/styles.css" />
-    <script defer src="/app.js"></script>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script defer src="/js/app.js"></script>
   </head>
   <body>
     <main id="main">
@@ -18,7 +18,7 @@
           </p>
           <div class="answer-wrapper">
             <button id="cool" class="answer lineunder animation-bounce">
-              <a href="/ready.html"> Cool!! </a>
+              Cool!!
             </button>
             <button id="no" class="answer lineunder animation-spin">
               <p class="">No, thank you</p>
@@ -35,8 +35,27 @@
           alt="guy cycling"
         />
       </div>
+
+      <div id="scene2" class="wrapper" hidden>
+        <div id="chat2" class="chat-box">
+          <p class="chat-box-msg">Say ok when you're ready 👌</p>
+          <div class="answer-wrapper">
+            <button id="ok" class="answer">Ok. 🤞</button>
+            <button on id="wait" class="answer">
+              <p class="">Wait ✋. It really can take a picture of me?</p>
+            </button>
+          </div>
+        </div>
+        <img
+          id="takingPicture"
+          class="img"
+          src="/assets/guy-taking-picture.svg"
+          alt="guy taking picture"
+        />
+        <!-- <video id="video" width="960" height="540" autoplay muted></video> -->
+      </div>
     </main>
   </body>
 
-  <script src="/face-api.min.js"></script>
+  <script src="/js/face-api.min.js"></script>
 </html>

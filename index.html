@@ -4,12 +4,39 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>letstakeapic</title>
+    <title>polaroid boy</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <link rel="stylesheet" href="/styles.css" />
     <script defer src="/app.js"></script>
   </head>
-  <body></body>
+  <body>
+    <main id="main">
+      <div id="scene1" class="wrapper">
+        <div id="chat1" class="chat-box">
+          <p class="chat-box-msg">
+            Hello, you look great today. Wanna take a picture with polaroid?
+          </p>
+          <div class="answer-wrapper">
+            <button id="cool" class="answer lineunder animation-bounce">
+              <a href="/ready.html"> Cool!! </a>
+            </button>
+            <button id="no" class="answer lineunder animation-spin">
+              <p class="">No, thank you</p>
+            </button>
+            <button id="fuckoff" class="answer lineunder animation-rude">
+              F*ck off, young boy
+            </button>
+          </div>
+        </div>
+        <img
+          id="cycling"
+          class="img"
+          src="/assets/guy-cycling.svg"
+          alt="guy cycling"
+        />
+      </div>
+    </main>
+  </body>
 
   <script src="/face-api.min.js"></script>
 </html>

@@ -139,9 +139,11 @@ body {
   height: 60%;
 }
 
-/* Change duration back to 7s */
+.coming-5s {
+  animation: come 5s;
+}
 
-.coming {
+.coming-1s {
   animation: come 1s;
 }
 
@@ -182,7 +184,11 @@ body {
   }
 }
 
-.leaving {
+.leaving-5s {
+  animation: leave 5s;
+}
+
+.leaving-1s {
   animation: leave 1s;
 }
 
@@ -220,9 +226,4 @@ body {
   100% {
     transform: scale(0);
   }
-}
-
-#takingPicture {
-  stroke: #f87171;
-  fill: #f87171;
 }

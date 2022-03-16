@@ -140,11 +140,12 @@ body {
 }
 
 /* Change duration back to 7s */
-#cycling {
-  animation: cycle 1s;
+
+.coming {
+  animation: come 1s;
 }
 
-@keyframes cycle {
+@keyframes come {
   0% {
     transform: scale(0);
   }
@@ -178,6 +179,46 @@ body {
   }
   100% {
     transform: scale(1);
+  }
+}
+
+.leaving {
+  animation: leave 1s;
+}
+
+@keyframes leave {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9) rotateY(180deg);
+  }
+  20% {
+    transform: scale(0.8);
+  }
+  30% {
+    transform: scale(0.7) rotateY(180deg);
+  }
+  40% {
+    transform: scale(0.6);
+  }
+  50% {
+    transform: scale(0.5) rotateY(180deg);
+  }
+  60% {
+    transform: scale(0.4);
+  }
+  70% {
+    transform: scale(0.3) rotateY(180deg);
+  }
+  80% {
+    transform: scale(0.2);
+  }
+  90% {
+    transform: scale(0.1) rotateY(180deg);
+  }
+  100% {
+    transform: scale(0);
   }
 }
 

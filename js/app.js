@@ -1,22 +1,4 @@
-const main = document.querySelector('#main');
-const scene1 = document.querySelector('#scene1');
-const scene2 = document.querySelector('#scene2');
-const chatbox = document.querySelector('#chat');
 const video = document.querySelector('#video');
-const acceptBtn = document.querySelector('#cool');
-const rejectBtn = document.querySelector('#no');
-const fuckOffBtn = document.querySelector('#fuckoff');
-
-function handleAccept() {
-  scene1.setAttribute('hidden', 'true');
-  scene2.removeAttribute('hidden');
-}
-function handleReject() {
-  console.log('Clicked');
-}
-function handleFuckOff() {
-  console.log('Clicked');
-}
 
 Promise.all([
   faceapi.nets.tinyFaceDetector.loadFromUri('/models'),
@@ -27,10 +9,6 @@ Promise.all([
   console.log('Face Regconize Is Ready');
   startVideo();
 });
-
-acceptBtn.addEventListener('click', handleAccept);
-rejectBtn.addEventListener('click', handleReject);
-fuckOffBtn.addEventListener('click', handleFuckOff);
 
 function startVideo() {
   // navigator.getUserMedia(
